@@ -31,5 +31,5 @@ use the editor.
 
 ## Project rules
 - Portfolio content lives in `src/data/portfolio.ts`; sections in `src/components/portfolio/` read from it — edit content there, not in components.
-- Single scrolling page with in-page anchors (user asked for smooth section navigation), so `/` is the only content route.
+- Each nav section is its own route (`src/routes/<section>.tsx`, user wants separate pages); `/` shows only the hero. Navbar/Footer live in `__root.tsx`, and each route sets head() via `src/lib/seo.ts`.
 - Contact form composes a mailto link via `src/lib/contact.ts` (no backend); it stays disabled when no email is configured so it never pretends to send.

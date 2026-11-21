@@ -5,7 +5,7 @@ import { Section } from "./Section";
 
 export function Skills() {
   return (
-    <Section id="skills" index="02" eyebrow="Toolkit" title="Technical Skills" className="bg-muted/60">
+    <Section id="skills" index="02" eyebrow="Toolkit" title="Technical Skills">
       <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
         {skillGroups.map((group, i) => (
           <Reveal

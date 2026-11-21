@@ -1,15 +1,17 @@
+import { Link } from "@tanstack/react-router";
 import { ArrowRight, MapPin } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { profile } from "@/data/portfolio";
 import photo from "@/assets/pallavi-kondapalli.jpeg.asset.json";
 import { GithubIcon, LinkedinIcon } from "./icons";
 import { Reveal } from "./Reveal";
+import { TypedName } from "./TypedName";
 
 export function Hero() {
   return (
-    <section id="top" className="relative overflow-hidden pt-32 pb-20 md:pt-40 md:pb-28">
+    <section id="top" className="relative flex min-h-[100svh] items-center overflow-hidden pt-28 pb-20 md:pt-32">
       <div className="dot-grid pointer-events-none absolute inset-0 [mask-image:radial-gradient(ellipse_at_top_right,black_20%,transparent_65%)]" />
-      <div className="relative mx-auto grid max-w-6xl items-center gap-14 px-6 lg:grid-cols-[1.25fr_1fr] lg:gap-20">
+      <div className="relative mx-auto grid w-full max-w-6xl items-center gap-14 px-6 lg:grid-cols-[1.25fr_1fr] lg:gap-20">
         <div>
           <Reveal>
             <p className="inline-flex items-center gap-2 rounded-full border bg-card px-3 py-1 text-xs text-muted-foreground shadow-card">
@@ -22,9 +24,10 @@ export function Hero() {
           </Reveal>
           <Reveal delay={80}>
             <h1 className="mt-6 text-5xl font-semibold tracking-tight text-foreground sm:text-6xl lg:text-7xl">
-              {profile.name.split(" ")[0]}
-              <br />
-              <span className="text-muted-foreground">{profile.name.split(" ").slice(1).join(" ")}</span>
+              <TypedName
+                first={profile.name.split(" ")[0] ?? ""}
+                last={profile.name.split(" ").slice(1).join(" ")}
+              />
             </h1>
           </Reveal>
           <Reveal delay={160}>
@@ -47,12 +50,12 @@ export function Hero() {
           <Reveal delay={320}>
             <div className="mt-9 flex flex-wrap items-center gap-3">
               <Button asChild variant="hero" size="xl">
-                <a href="#projects">
+                <Link to="/projects">
                   View My Projects <ArrowRight />
-                </a>
+                </Link>
               </Button>
               <Button asChild variant="outline" size="xl">
-                <a href="#contact">Contact Me</a>
+                <Link to="/contact">Contact Me</Link>
               </Button>
               <div className="ml-1 flex items-center gap-1">
                 <a
@@ -94,7 +97,7 @@ export function Hero() {
             <figcaption className="absolute -bottom-5 left-5 right-5 flex items-center justify-between gap-3 rounded-xl border bg-card/95 px-4 py-3 shadow-card backdrop-blur">
               <div>
                 <p className="text-sm font-semibold text-foreground">Pallavi Kondapalli</p>
-                <p className="text-xs text-muted-foreground">B.Tech, Computer Science</p>
+                <p className="text-xs text-muted-foreground">Software Developer</p>
               </div>
               <p className="flex items-center gap-1 text-xs text-muted-foreground">
                 <MapPin className="size-3.5 text-primary" /> Hyderabad

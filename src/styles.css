@@ -172,11 +172,6 @@
     border-color: var(--color-border);
   }
 
-  html {
-    scroll-behavior: smooth;
-    scroll-padding-top: 5rem;
-  }
-
   body {
     background-color: var(--color-background);
     color: var(--color-foreground);
@@ -211,9 +206,31 @@
   }
 }
 
+@utility caret-blink {
+  animation: caret-blink 1s steps(1) infinite;
+}
+
+@keyframes caret-blink {
+  50% {
+    opacity: 0;
+  }
+}
+
+@utility page-enter {
+  animation: page-enter 0.5s cubic-bezier(0.22, 1, 0.36, 1) both;
+}
+
+@keyframes page-enter {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+}
+
 @media (prefers-reduced-motion: reduce) {
-  html {
-    scroll-behavior: auto;
+  .page-enter,
+  .caret-blink {
+    animation: none;
   }
   .reveal {
     opacity: 1;

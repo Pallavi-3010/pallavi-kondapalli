@@ -29,7 +29,7 @@ export function Contact() {
     setForm((f) => ({ ...f, [k]: e.target.value }));
 
   return (
-    <Section id="contact" index="06" eyebrow="Get in touch" title="Let's Connect" className="bg-muted/60">
+    <Section id="contact" index="06" eyebrow="Get in touch" title="Let's Connect" next={false}>
       <div className="grid gap-10 lg:grid-cols-[1fr_1.3fr]">
         <Reveal>
           <p className="max-w-md text-lg leading-relaxed text-muted-foreground">

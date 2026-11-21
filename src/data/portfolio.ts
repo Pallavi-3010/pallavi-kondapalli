@@ -145,10 +145,12 @@ export const education = [
 ];
 
 export const navLinks = [
-  { id: "about", label: "About" },
-  { id: "skills", label: "Skills" },
-  { id: "experience", label: "Experience" },
-  { id: "projects", label: "Projects" },
-  { id: "education", label: "Education" },
-  { id: "contact", label: "Contact" },
-];
+  { to: "/about", label: "About" },
+  { to: "/skills", label: "Skills" },
+  { to: "/experience", label: "Experience" },
+  { to: "/projects", label: "Projects" },
+  { to: "/education", label: "Education" },
+  { to: "/contact", label: "Contact" },
+] as const;
+
+export type NavPath = (typeof navLinks)[number]["to"];

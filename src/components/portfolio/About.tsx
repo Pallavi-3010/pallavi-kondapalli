@@ -12,31 +12,17 @@ export function About() {
           ))}
         </Reveal>
         <Reveal delay={120}>
-          <div className="overflow-hidden rounded-2xl border border-ink-border bg-ink shadow-soft">
-            <div className="flex items-center gap-1.5 border-b border-ink-border px-4 py-3">
-              <span className="size-2.5 rounded-full bg-ink-muted/40" />
-              <span className="size-2.5 rounded-full bg-ink-muted/40" />
-              <span className="size-2.5 rounded-full bg-ink-muted/40" />
-              <span className="ml-3 font-mono text-xs text-ink-muted">pallavi.ts</span>
-            </div>
-            <pre className="overflow-x-auto p-5 font-mono text-[13px] leading-7 text-ink-foreground">
-              <code>
-                <span className="text-code-accent">const</span> pallavi = {"{"}
-                {"\n"}
-                {aboutHighlights.map((h) => (
-                  <span key={h.label}>
-                    {"  "}
-                    <span className="text-code-key">{h.label.toLowerCase().replace(/\s/g, "_")}</span>:{" "}
-                    <span className="text-code-string">"{h.value}"</span>,{"\n"}
-                  </span>
-                ))}
-                {"  "}
-                <span className="text-code-key">learning</span>: <span className="text-code-accent">true</span>,
-                {"\n"}
-                {"}"};
-              </code>
-            </pre>
-          </div>
+          <dl className="grid grid-cols-2 gap-4 lg:grid-cols-1">
+            {aboutHighlights.map((h) => (
+              <div
+                key={h.label}
+                className="rounded-2xl border bg-card p-5 shadow-card transition-all duration-300 hover:-translate-y-0.5 hover:border-primary/30 hover:shadow-card-hover"
+              >
+                <dt className="text-xs uppercase tracking-wider text-muted-foreground">{h.label}</dt>
+                <dd className="mt-1.5 font-semibold text-foreground">{h.value}</dd>
+              </div>
+            ))}
+          </dl>
         </Reveal>
       </div>
     </Section>

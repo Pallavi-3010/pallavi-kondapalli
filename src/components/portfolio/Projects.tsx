@@ -8,7 +8,7 @@ import { cn } from "@/lib/utils";
 
 export function Projects() {
   return (
-    <Section id="projects" index="04" eyebrow="Selected work" title="Projects" className="bg-muted/60">
+    <Section id="projects" index="04" eyebrow="Selected work" title="Projects">
       <div className="grid gap-5 md:grid-cols-2">
         {projects.map((p, i) => (
           <Reveal key={p.title} delay={(i % 2) * 80} className={cn(i === 0 && "md:col-span-2")}>
