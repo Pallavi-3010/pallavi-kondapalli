@@ -28,3 +28,8 @@ use the editor.
   own key and store it in Secrets.
 - **Secrets.** Lovable manages them. Do not put secret values in the repo.
 <!-- LOVABLE:END -->
+
+## Project rules
+- Portfolio content lives in `src/data/portfolio.ts`; sections in `src/components/portfolio/` read from it — edit content there, not in components.
+- Single scrolling page with in-page anchors (user asked for smooth section navigation), so `/` is the only content route.
+- Contact form composes a mailto link via `src/lib/contact.ts` (no backend); it stays disabled when no email is configured so it never pretends to send.
