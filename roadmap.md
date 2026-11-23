@@ -8,3 +8,4 @@
 - [x] Nicer nav bar effects + hover
 - [x] Remove pallavi.ts code box from About
 - [x] Each nav item opens its own page
+- [x] Navbar: no GitHub/LinkedIn icons, wider layout, role line, "Let's talk" CTA
