@@ -3,8 +3,8 @@
 - [x] Add profile photo to hero
 - [x] Email address: pallavikondapalli30@gmail.com
 - [ ] Project GitHub links (waiting on Pallavi)
-- [ ] Typing effect on name in hero (starts from "P")
-- [ ] Photo caption: "Software Developer" instead of B.Tech
-- [ ] Nicer nav bar effects + hover
-- [ ] Remove pallavi.ts code box from About
-- [ ] Each nav item opens its own page
+- [x] Typing effect on name in hero (starts from "P")
+- [x] Photo caption: "Software Developer" instead of B.Tech
+- [x] Nicer nav bar effects + hover
+- [x] Remove pallavi.ts code box from About
+- [x] Each nav item opens its own page
