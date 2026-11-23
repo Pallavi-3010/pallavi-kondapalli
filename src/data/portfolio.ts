@@ -101,6 +101,7 @@ export const projects: Project[] = [
       "A distributed web crawling and search system built on a producer-consumer architecture. RabbitMQ distributes crawl tasks, BeautifulSoup handles scraping, and TF-IDF powers ranking — served through a Flask search backend with a Streamlit interface.",
     stack: ["Python", "RabbitMQ", "BeautifulSoup", "Flask", "TF-IDF", "Streamlit"],
     icon: siRabbitmq,
+    repoUrl: "https://github.com/Pallavi-3010/Webscour_Distributed-Web-Crawler",
   },
   {
     title: "BigFeat",
@@ -109,6 +110,7 @@ export const projects: Project[] = [
       "An AutoML-focused project that simplifies machine learning workflows by automating model development and evaluation.",
     stack: ["Python", "Machine Learning", "AutoML"],
     icon: siPython,
+    repoUrl: "https://github.com/Pallavi-3010/Feature_engineering_using_automl",
   },
   {
     title: "Brain Tumor Detection",
@@ -117,6 +119,7 @@ export const projects: Project[] = [
       "An image classification application using deep learning to identify brain tumor patterns from MRI images.",
     stack: ["Python", "TensorFlow", "Keras", "CNN", "OpenCV"],
     icon: siTensorflow,
+    repoUrl: "https://github.com/Pallavi-3010/brain-tumor-detection",
   },
   {
     title: "Employee Management System",
@@ -124,6 +127,7 @@ export const projects: Project[] = [
       "An application to organize employee information and perform create, read, update and delete operations on a relational database.",
     stack: ["Python", "SQL"],
     icon: siMysql,
+    repoUrl: "https://github.com/Pallavi-3010/Use-case-1",
   },
   {
     title: "Gaming Hub",

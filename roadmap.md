@@ -2,7 +2,7 @@
 - [x] Build portfolio (all sections from brief)
 - [x] Add profile photo to hero
 - [x] Email address: pallavikondapalli30@gmail.com
-- [ ] Project GitHub links (waiting on Pallavi)
+- [x] Project GitHub links (4 of 5; Gaming Hub still has no repo)
 - [x] Typing effect on name in hero (starts from "P")
 - [x] Photo caption: "Software Developer" instead of B.Tech
 - [x] Nicer nav bar effects + hover
