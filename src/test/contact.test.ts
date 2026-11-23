@@ -10,6 +10,10 @@ describe("contact form", () => {
     expect(buildContactMailto("  ", msg)).toBeNull();
   });
 
+  it("links to Pallavi's actual LinkedIn profile", () => {
+    expect(profile.linkedin).toBe("https://www.linkedin.com/in/pallavi-kondapalli-825152295/");
+  });
+
   it("addresses messages to Pallavi's email", () => {
     expect(profile.email).toBe("pallavikondapalli30@gmail.com");
     const href = buildContactMailto(profile.email, msg);

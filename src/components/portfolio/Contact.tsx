@@ -12,7 +12,7 @@ import { Section } from "./Section";
 
 const channels = [
   { label: "GitHub", value: "github.com/Pallavi-3010", href: profile.github, Icon: GithubIcon },
-  { label: "LinkedIn", value: "in/pallavi-kondapalli", href: profile.linkedin, Icon: LinkedinIcon },
+  { label: "LinkedIn", value: "in/pallavi-kondapalli-825152295", href: profile.linkedin, Icon: LinkedinIcon },
 ];
 
 export function Contact() {
