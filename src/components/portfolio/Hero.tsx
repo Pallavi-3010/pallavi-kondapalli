@@ -12,10 +12,10 @@ export function Hero() {
     <section id="top" className="relative flex min-h-[100svh] items-center overflow-hidden pt-28 pb-20 md:pt-32">
       <div className="dot-grid pointer-events-none absolute inset-0 [mask-image:radial-gradient(ellipse_at_top_right,black_20%,transparent_65%)]" />
       <div className="relative mx-auto grid w-full max-w-6xl items-center gap-14 px-6 lg:grid-cols-[1.25fr_1fr] lg:gap-20">
-        <div>
+        <div className="min-w-0">
           <Reveal>
             <p className="inline-flex items-center gap-2 rounded-full border bg-card px-3 py-1 text-xs text-muted-foreground shadow-card">
-              <span className="relative flex size-2">
+              <span className="relative flex size-2 shrink-0">
                 <span className="absolute inline-flex size-full animate-ping rounded-full bg-primary/60" />
                 <span className="relative inline-flex size-2 rounded-full bg-primary" />
               </span>
@@ -23,7 +23,7 @@ export function Hero() {
             </p>
           </Reveal>
           <Reveal delay={80}>
-            <h1 className="mt-6 text-5xl font-semibold tracking-tight text-foreground sm:text-6xl lg:text-7xl">
+            <h1 className="mt-6 text-4xl font-semibold text-foreground min-[400px]:text-5xl sm:text-6xl lg:text-7xl">
               <TypedName
                 first={profile.name.split(" ")[0] ?? ""}
                 last={profile.name.split(" ").slice(1).join(" ")}
@@ -94,8 +94,8 @@ export function Hero() {
                 fetchPriority="high"
               />
             </div>
-            <figcaption className="absolute -bottom-5 left-5 right-5 flex items-center justify-between gap-3 rounded-xl border bg-card/95 px-4 py-3 shadow-card backdrop-blur">
-              <div>
+            <figcaption className="absolute -bottom-5 left-3 right-3 grid grid-cols-[minmax(0,1fr)_auto] items-center gap-2 rounded-xl border bg-card/95 px-3 py-3 shadow-card backdrop-blur sm:left-5 sm:right-5 sm:px-4">
+              <div className="min-w-0">
                 <p className="text-sm font-semibold text-foreground">Pallavi Kondapalli</p>
                 <p className="text-xs text-muted-foreground">Software Developer</p>
               </div>

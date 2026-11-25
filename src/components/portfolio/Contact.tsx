@@ -30,7 +30,7 @@ export function Contact() {
 
   return (
     <Section id="contact" index="06" eyebrow="Get in touch" title="Let's Connect" next={false}>
-      <div className="grid gap-10 lg:grid-cols-[1fr_1.3fr]">
+      <div className="grid gap-10 lg:grid-cols-[minmax(0,1fr)_minmax(0,1.3fr)]">
         <Reveal>
           <p className="max-w-md text-lg leading-relaxed text-muted-foreground">
             I am always interested in connecting with technology professionals, exploring new
@@ -43,27 +43,27 @@ export function Contact() {
                   href={href}
                   target="_blank"
                   rel="noreferrer"
-                  className="group flex items-center gap-4 rounded-xl border bg-card p-4 shadow-card transition-all hover:border-primary/30 hover:shadow-card-hover"
+                  className="group grid grid-cols-[auto_minmax(0,1fr)_auto] items-center gap-3 rounded-xl border bg-card p-4 shadow-card transition-all hover:border-primary/30 hover:shadow-card-hover"
                 >
                   <span className="grid size-10 place-items-center rounded-lg bg-secondary text-secondary-foreground">
                     <Icon className="size-[18px]" />
                   </span>
-                  <span className="flex-1">
+                  <span className="min-w-0">
                     <span className="block text-xs text-muted-foreground">{label}</span>
-                    <span className="block text-sm font-medium text-foreground">{value}</span>
+                    <span className="block text-sm font-medium text-foreground [overflow-wrap:anywhere]">{value}</span>
                   </span>
                   <ArrowUpRight className="size-4 text-muted-foreground transition-transform group-hover:-translate-y-0.5 group-hover:translate-x-0.5 group-hover:text-primary" />
                 </a>
               </li>
             ))}
-            <li className="flex items-center gap-4 rounded-xl border bg-card p-4 shadow-card">
+            <li className="grid grid-cols-[auto_minmax(0,1fr)] items-center gap-3 rounded-xl border bg-card p-4 shadow-card">
               <span className="grid size-10 place-items-center rounded-lg bg-secondary text-secondary-foreground">
                 <Mail className="size-[18px]" />
               </span>
-              <span className="flex-1">
+              <span className="min-w-0">
                 <span className="block text-xs text-muted-foreground">Email</span>
                 {profile.email ? (
-                  <a href={`mailto:${profile.email}`} className="block text-sm font-medium text-foreground hover:text-primary">
+                  <a href={`mailto:${profile.email}`} className="block text-sm font-medium text-foreground [overflow-wrap:anywhere] hover:text-primary">
                     {profile.email}
                   </a>
                 ) : (

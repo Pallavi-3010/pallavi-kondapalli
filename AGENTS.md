@@ -33,3 +33,4 @@ use the editor.
 - Portfolio content lives in `src/data/portfolio.ts`; sections in `src/components/portfolio/` read from it — edit content there, not in components.
 - Each nav section is its own route (`src/routes/<section>.tsx`, user wants separate pages); `/` shows only the hero. Navbar/Footer live in `__root.tsx`, and each route sets head() via `src/lib/seo.ts`.
 - Contact form composes a mailto link via `src/lib/contact.ts` (no backend); it stays disabled when no email is configured so it never pretends to send.
+- Keep the full navigation at widths of at least 1100px and use the collapsible menu below that; the brand and all section links need room without clipping. Use minmax(0,1fr) tracks and wrapping for long contact details to prevent mobile overflow.
