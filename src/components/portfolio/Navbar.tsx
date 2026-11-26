@@ -21,11 +21,13 @@ export function Navbar() {
           <span className="grid size-10 shrink-0 place-items-center rounded-lg bg-ink font-mono text-sm font-semibold text-ink-foreground transition-colors group-hover:bg-primary group-hover:text-primary-foreground md:size-11">
             PK
           </span>
-          <span className="flex min-w-0 flex-col leading-none">
-            <span className="text-sm font-semibold text-foreground sm:text-base">
+          {/* Name and role share one line so the brand sits level with the menu. */}
+          <span className="flex min-w-0 items-center gap-2.5 leading-none">
+            <span className="truncate text-sm font-semibold text-foreground sm:text-base">
               {profile.name}
             </span>
-            <span className="mt-1.5 hidden text-[10px] font-medium uppercase tracking-[0.22em] text-muted-foreground transition-colors duration-300 group-hover:text-primary sm:block">
+            <span aria-hidden="true" className="hidden h-4 w-px shrink-0 bg-border sm:block" />
+            <span className="hidden shrink-0 text-[10px] font-medium uppercase tracking-[0.22em] text-muted-foreground transition-colors duration-300 group-hover:text-primary sm:block">
               Software Developer
             </span>
           </span>
@@ -36,9 +38,15 @@ export function Navbar() {
             <li key={link.to} className="min-w-0 flex-1">
               <Link
                 to={link.to}
-                className="block rounded-full px-3 py-2.5 text-center text-[13px] font-medium text-muted-foreground transition-colors hover:bg-accent hover:text-accent-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring data-[status=active]:bg-ink data-[status=active]:text-ink-foreground"
+                className="group block rounded-full px-3 py-2.5 text-center text-[13px] font-medium text-muted-foreground transition-colors hover:bg-accent hover:text-accent-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring data-[status=active]:bg-ink data-[status=active]:text-ink-foreground"
               >
-                {link.label}
+                <span className="relative inline-block">
+                  {link.label}
+                  <span
+                    aria-hidden="true"
+                    className="absolute inset-x-0 -bottom-1 h-px origin-left scale-x-0 bg-primary transition-transform duration-300 group-hover:scale-x-100 group-data-[status=active]:hidden"
+                  />
+                </span>
               </Link>
             </li>
           ))}
