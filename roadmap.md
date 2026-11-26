@@ -9,5 +9,6 @@
 - [x] Remove pallavi.ts code box from About
 - [x] Each nav item opens its own page
 - [x] Navbar: no GitHub/LinkedIn icons, wider layout, role line, "Let's talk" CTA
-- [ ] Increase space between the profile name and navigation
-- [ ] Check and fix all portfolio pages across phone, tablet, and desktop widths
+- [x] Increase space between the profile name and navigation
+- [x] Check and fix all portfolio pages across phone, tablet, and desktop widths
+- [x] Highlight the navigation with restrained styling and remove heavy navigation effects
