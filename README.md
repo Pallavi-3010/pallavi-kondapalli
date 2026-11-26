@@ -1,26 +1,102 @@
 # Pallavi Kondapalli
 
-based on the above prompt design a good portfolio and give
+### Software Developer | Computer Science Engineer | Technology Enthusiast
 
-This project was built with [Lovable](https://lovable.dev).
+Welcome to my portfolio repository! I am a Computer Science Engineering graduate with an interest in software development, programming, automation, and emerging technologies.
 
-**Live app**: https://pallavi-kondapalli.lovable.app
+Currently working at **Midh Technologies Pvt. Ltd., Hyderabad**, I am continuously strengthening my technical knowledge and gaining industry exposure.
 
-## Build with Lovable
+I enjoy exploring technologies, developing practical applications, and improving my problem-solving skills.
 
-Continue developing this project in the [Lovable editor](https://lovable.dev/projects/ffdad089-f981-4ab6-a344-0c5d1299916e).
+## 🌐 Portfolio
 
-- **Ship faster**: describe what you want to build and Lovable handles the code.
-- **Stay in sync**: every change made in Lovable is committed straight to this repository.
-- **Full ownership**: this code is yours. Push to `main` on GitHub and your changes sync back into Lovable, ready for your next prompt.
+**Live Website:** https://pallavi-kondapalli.lovable.app
 
-## Development
+## 💻 Technical Skills
 
-Prefer working locally? You need Node.js and npm — [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating).
+**Programming Languages**
+- C
+- C++
+- Java
+- Python
 
-```sh
-git clone <this-repository-url>
-cd <repository-name>
-npm i
-npm run dev
-```
+**Operating Systems**
+- Linux
+
+**DevOps & Containerization**
+- Docker
+
+**Messaging Systems**
+- RabbitMQ
+
+**AI & Automation**
+- AutoML
+
+**Additional Technical Exposure**
+- Git and GitHub
+- AWS
+- Kubernetes
+- Terraform
+- Jenkins
+- Shell Scripting
+
+## 🚀 Featured Projects
+
+### 1. WebScour – Distributed Web Crawler and Search Engine
+- Developed a distributed web crawling and search system.
+- Implemented producer-consumer architecture using RabbitMQ.
+- Integrated web scraping and TF-IDF-based search functionality.
+
+**Technologies:** Python, RabbitMQ, BeautifulSoup, Flask, TF-IDF, Streamlit.
+
+### 2. BigFeat – AutoML Platform
+- Worked on an AutoML-focused project to simplify machine learning workflows and model development.
+
+**Technologies:** Python, Machine Learning, AutoML.
+
+### 3. Brain Tumor Detection Using Deep Learning
+- Developed an image classification project using deep learning techniques to identify brain tumor patterns from MRI images.
+
+**Technologies:** Python, TensorFlow, Keras, CNN, OpenCV.
+
+### 4. Employee Management System
+- Developed an application to manage employee information and database operations.
+
+**Technologies:** Python, SQL.
+
+### 5. Gaming Hub
+- Created an interactive gaming-themed website.
+
+**Technologies:** HTML, CSS, JavaScript.
+
+## 🎓 Education
+
+**B.Tech – Computer Science and Engineering**  
+Geethanjali Institute of Science and Technology  
+Aggregate: 83%
+
+**Intermediate**  
+Narayana Junior College  
+Aggregate: 92%
+
+**SSC**  
+Ravindra Bharathi School  
+Aggregate: 97%
+
+## 💼 Professional Experience
+
+**Midh Technologies Pvt. Ltd.**  
+Hyderabad, Telangana, India  
+Currently Working
+
+Gaining industry exposure and strengthening technical knowledge through structured technical training and hands-on learning with modern IT tools and technologies.
+
+## 📫 Connect With Me
+
+- **GitHub:** https://github.com/Pallavi-3010
+- **LinkedIn:** https://www.linkedin.com/in/pallavi-kondapalli-825152295/
+- **Portfolio:** https://pallavi-kondapalli.lovable.app
+
+---
+
+*Designed, customized, and maintained by Pallavi Kondapalli.*
