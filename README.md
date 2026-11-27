@@ -2,7 +2,7 @@
 
 ### Software Developer | Computer Science Engineer | Technology Enthusiast
 
-Welcome to my portfolio repository! I am a Computer Science Engineering graduate with an interest in software development, programming, automation, and emerging technologies.
+Welcome to My Portfolio! I am a Computer Science Engineering graduate with an interest in software development, programming, automation, and emerging technologies.
 
 Currently working at **Midh Technologies Pvt. Ltd., Hyderabad**, I am continuously strengthening my technical knowledge and gaining industry exposure.
 
